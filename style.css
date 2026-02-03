@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+.header {
+    background-color: #0b2c44;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.company-name {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav a {
+    color: #ffffff;
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+.hero {
+    background-color: #ffffff;
+    padding: 90px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: #0b2c44;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.btn-primary {
+    background-color: #0b2c44;
+    color: #ffffff;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #08324f;
+}
+.products {
+    background-color: #ffffff;
+    padding: 60px 40px;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #0b2c44;
+}
+
+.product-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    background-color: #f4f6f9;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.why-us {
+    background-color: #eef1f5;
+    padding: 60px 40px;
+}
+
+.why-us h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 28px;
+    color: #0b2c44;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.feature {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.footer {
+    background-color: #0b2c44;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .nav a {
+        margin: 10px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+.products-page {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.products-page h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #0b2c44;
+}
+
+.products-page p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #555;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.product-card h3 {
+    margin: 15px 0 10px 0;
+    color: #0b2c44;
+}
+
+.product-card p {
+    color: #555;
+    font-size: 15px;
+    padding: 0 15px 20px 15px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 768px) {
+    .product-card img {
+        height: 150px;
+    }
+}
+.hero {
+    height: 100vh; /* Full viewport height */
+    background-image: 'https://stock.adobe.com/search?k=%22building+material%22';
+    background-size: cover; /* Cover entire section */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+}
+
+/* Dark overlay for readability */
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(11, 44, 68, 0.5); /* Semi-transparent dark overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #f9a825;
+    color: #0b2c44;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ffc107;
+}
+
+/* Responsive Hero */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+}
